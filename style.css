@@ -1,3 +1,8 @@
+body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd
+{
+  margin: 0px;
+}
+
 body {
     background-color: darkslategray;
 }
@@ -5,6 +10,7 @@ body {
 .avatar-container {
     height: 400px;
     width: 350px;
+    z-index: -1;
 }
 
 .avatar-container img {
@@ -23,51 +29,57 @@ body {
     font-family: Arial, Helvetica, sans-serif ;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
-    margin: auto;
     text-align: center;
+    margin: auto;
     line-height: 40px;
     top: 85%;
     border-radius: 2rem;
 }
 
+
 .info-container {
-    position: relative;
+    position: absolute;
     background-color: whitesmoke;
-    height: 400px;
+    height: 350px;
     width: 350px;
-    margin-top: -30px;
     text-align: center;
     border-radius: 2rem;
 }
 
 .reating {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 2rem;
+    position: relative;
+    margin-top: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(80, 80, 80);
+    font-weight: 700;
 }
 
-.star{
+.star {
     height: 1rem;
+    color: goldenrod;
 }
 
 .name {
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
-    color: rgb(45, 45, 45);
+    color: rgb(70, 70, 70);
+    margin-top: 1rem;
 }
 
 .skills {
     font-family: Arial, Helvetica, sans-serif;
-    color:grey;
+    color:rgb(80, 80, 80);
     font-weight: 600;
+    margin-top: 0.5rem;
+
 }
 
 .price {
-    color: grey;
+    color: rgb(125, 125, 125);
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1.5rem;
 }
 
 .price-value {
@@ -85,6 +97,58 @@ body {
     border: none;
     border-radius: 2rem;
     padding: 0.7rem 1.5rem;
+    margin-top: 1.5rem;
     width: 80%;
-    box-shadow: rgba(160, 160, 160, 0.2) 0px 10px 15px 0px;
+    box-shadow: rgba(160, 160, 160, 0.5) 0px 10px 15px 0px;
+}
+
+.contact {
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.linkedin {
+    border: solid gray;
+    width: 25%;
+}
+
+.linkedin img {
+    height: 2rem;
+    padding: 1.5rem;
+}
+
+.instagram {
+    border: solid gray;
+    width: 25%;
+}
+
+.instagram img {
+    height: 2rem;
+    padding: 1.5rem;
+}
+
+.facebook{
+    border: solid gray;
+    width: 25%;
+}
+
+.facebook img {
+    height: 2rem;
+    padding: 1.5rem;
+
+}
+
+.twitter{
+    border: solid gray;
+    width: 25%;
+}
+
+.twitter img {
+    height: 2rem;
+    padding: 1.5rem;
+}
+
+.logo {
+    height: 4rem;
 }
