@@ -29,8 +29,8 @@ body {
     position: relative;
     background-color: hsla(207, 100%, 62%, 0.8);
     color: blanchedalmond;
-    height: 10%;
-    width: 50%;
+    height: auto;
+    width: 60%;
     font-family: Arial, Helvetica, sans-serif ;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
@@ -41,6 +41,12 @@ body {
     border-radius: 2rem;
 }
 
+.status img {
+    position: absolute;
+    height: 20px;
+    width: 30px;
+    border-radius: 0px;
+}
 
 .info-container {
     position: absolute;
@@ -57,13 +63,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color:rgb(80, 80, 80);
     font-weight: 600;
-    /*5 - stars*/
 }
 
 .star {
     height: 1rem;
     color: goldenrod;
-    /*colour for svg*/
+    /*color for svg*/
 }
 
 .name {
@@ -116,9 +121,10 @@ body {
 }
 
 /*color for svg*/
+/*single class structure*/
 
 .linkedin {
-    border: 2px solid rgb(200, 200, 200);
+    border: 2px solid rgb(220, 220, 220);
     width: 25%;
     border-bottom: none;
     border-right: none;
@@ -131,7 +137,7 @@ body {
 }
 
 .instagram {
-    border: 2px solid rgb(200, 200, 200);
+    border: 2px solid rgb(220, 220, 220);
     border-bottom: none;
     border-right: none;
     width: 25%;
@@ -143,7 +149,7 @@ body {
 }
 
 .facebook{
-    border: 2px solid rgb(200, 200, 200);
+    border: 2px solid rgb(220, 220, 220);
     width: 25%;
     border-bottom: none;
     border-right: none;
@@ -156,7 +162,7 @@ body {
 }
 
 .twitter{
-    border: 2px solid rgb(200, 200, 200);
+    border: 2px solid rgb(220, 220, 220);
     width: 25%;
     border-bottom: none;
     border-right: none;
@@ -165,8 +171,4 @@ body {
 .twitter img {
     height: 2rem;
     padding: 1.5rem;
-}
-
-.logo {
-    height: 4rem;
 }
