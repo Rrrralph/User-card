@@ -4,13 +4,18 @@ body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquot
 }
 
 body {
-    background-color: darkslategray;
+    background-color: rgb(100, 100, 100);
+}
+
+.card-container {
+    /*center card on body*/
+    position: relative;
+    margin: auto;
 }
 
 .avatar-container {
     height: 400px;
     width: 350px;
-    z-index: -1;
 }
 
 .avatar-container img {
@@ -31,7 +36,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     margin: auto;
-    line-height: 40px;
+    line-height: 42px; /*relative or auto*/
     top: 85%;
     border-radius: 2rem;
 }
@@ -51,12 +56,14 @@ body {
     margin-top: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     color:rgb(80, 80, 80);
-    font-weight: 700;
+    font-weight: 600;
+    /*5 - stars*/
 }
 
 .star {
     height: 1rem;
     color: goldenrod;
+    /*colour for svg*/
 }
 
 .name {
@@ -108,9 +115,14 @@ body {
     justify-content: center;
 }
 
+/*color for svg*/
+
 .linkedin {
-    border: solid gray;
+    border: 2px solid rgb(200, 200, 200);
     width: 25%;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
 }
 
 .linkedin img {
@@ -119,7 +131,9 @@ body {
 }
 
 .instagram {
-    border: solid gray;
+    border: 2px solid rgb(200, 200, 200);
+    border-bottom: none;
+    border-right: none;
     width: 25%;
 }
 
@@ -129,8 +143,10 @@ body {
 }
 
 .facebook{
-    border: solid gray;
+    border: 2px solid rgb(200, 200, 200);
     width: 25%;
+    border-bottom: none;
+    border-right: none;
 }
 
 .facebook img {
@@ -140,8 +156,10 @@ body {
 }
 
 .twitter{
-    border: solid gray;
+    border: 2px solid rgb(200, 200, 200);
     width: 25%;
+    border-bottom: none;
+    border-right: none;
 }
 
 .twitter img {
