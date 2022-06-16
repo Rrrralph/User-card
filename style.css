@@ -28,6 +28,7 @@ body {
 .status {
     position: relative;
     width: 60%;
+    height: 2rem;
     top: 85%;
     border-radius: 2rem;
     margin: auto;
@@ -38,11 +39,12 @@ body {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     align-items: center;
-    line-height: 42px; /*change to relative or auto*/
+    line-height: 2rem;
 }
 
 .checked-svg {
     height: 1rem;
+    width: 30px;
     fill: white;
 }
 
