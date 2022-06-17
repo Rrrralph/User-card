@@ -67,8 +67,9 @@ body {
     font-weight: 600;
 }
 
-.star {
+.star-svg {
     height: 1rem;
+    width: 1rem;
     color: goldenrod;
     /*color for svg*/
 }
@@ -133,21 +134,11 @@ body {
     border-left: none;
 }
 
-.linkedin img {
-    height: 2rem;
-    padding: 1.5rem;
-}
-
 .instagram {
     border: 2px solid rgb(220, 220, 220);
     border-bottom: none;
     border-right: none;
     width: 25%;
-}
-
-.instagram img {
-    height: 2rem;
-    padding: 1.5rem;
 }
 
 .facebook{
@@ -157,12 +148,6 @@ body {
     border-right: none;
 }
 
-.facebook img {
-    height: 2rem;
-    padding: 1.5rem;
-
-}
-
 .twitter{
     border: 2px solid rgb(220, 220, 220);
     width: 25%;
@@ -170,7 +155,8 @@ body {
     border-right: none;
 }
 
-.twitter img {
+.contact-icons {
     height: 2rem;
     padding: 1.5rem;
+    color: rgb(100, 100, 100);
 }
