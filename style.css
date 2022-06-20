@@ -9,8 +9,9 @@ body {
 
 .card-container {
     /*center card on body*/
-    position: relative;
-    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .avatar-container {
