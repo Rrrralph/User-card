@@ -10,8 +10,9 @@ body {
 .card-container {
     /*center card on body*/
     position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, -100%);
 }
 
 .avatar-container {
