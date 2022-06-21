@@ -4,20 +4,20 @@ body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquot
 }
 
 body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(100, 100, 100);
 }
 
 .card-container {
-    /*center card on body*/
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -100%);
+    width: 350px;
 }
 
 .avatar-container {
+    position: relative;
     height: 400px;
-    width: 350px;
 }
 
 .avatar-container img {
@@ -28,18 +28,18 @@ body {
 }
 
 .status {
-    position: relative;
-    width: 50%;
-    height: 2rem;
-    padding: 5px;
-    top: 85%;
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
     margin: auto;
+    padding: 5px;
     border-radius: 2rem;
     background-color: hsla(207, 65%, 52%, 0.8);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
     font-weight: 600;
+    font-size: 14px;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     line-height: 2rem;
@@ -51,20 +51,17 @@ body {
     color: white;
 }
 
-/*======================================================================*/
-
 .info-container {
-    position: absolute;
-    background-color: white;
+    position: relative;
+    margin-top: -4rem;
     height: auto;
-    width: 350px;
+    background-color: white;
     text-align: center;
     border-radius: 2rem;
 }
 
 .reating {
-    position: relative;
-    margin-top: 2rem;
+    /**margin-top: 2rem;**/
     font-family: Arial, Helvetica, sans-serif;
     color:rgb(100, 100, 100);
     font-weight: 700;
