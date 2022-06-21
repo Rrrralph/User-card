@@ -61,7 +61,7 @@ body {
 }
 
 .reating {
-    /**margin-top: 2rem;**/
+    margin-top: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     color:rgb(100, 100, 100);
     font-weight: 700;
@@ -112,47 +112,45 @@ body {
     border-radius: 2rem;
     padding: 1rem 1.5rem;
     margin-top: 1.5rem;
-    width: 80%;
+    width: 70%;
     box-shadow: rgba(160, 160, 160, 0.5) 0px 10px 15px 0px;
+    cursor: pointer;
 }
 
-.contact {
+.hire-button:hover {
+    background-color:#d44242;
+    width: 60%;
+    box-shadow: rgba(160, 160, 160, 0.5) 0px 5px 10px 0px;
+    transition: 150ms;
+}
+
+.contacts-list {
     display: flex;
     margin-top: 2rem;
     justify-content: center;
 }
 
-.linkedin {
-    border: 2px solid rgb(220, 220, 220);
+.contact-item {
     width: 25%;
-    border-bottom: none;
-    border-right: none;
-    border-left: none;
+    border-top: 2px solid rgb(220, 220, 220);
 }
 
-.instagram {
-    border: 2px solid rgb(220, 220, 220);
-    border-bottom: none;
-    border-right: none;
-    width: 25%;
+.contact-item:not(:last-child) {
+    border-right: 2px solid rgb(220, 220, 220);
 }
 
-.facebook {
-    border: 2px solid rgb(220, 220, 220);
-    width: 25%;
-    border-bottom: none;
-    border-right: none;
+.contact-button {
+    all: unset;
+    cursor: pointer;
 }
 
-.twitter {
-    border: 2px solid rgb(220, 220, 220);
-    width: 25%;
-    border-bottom: none;
-    border-right: none;
-}
-
-.contact-icons {
+.contact-icon {
     height: 2rem;
     padding: 1.5rem;
     color: rgb(100, 100, 100);
+}
+
+.contact-icon:hover {
+    color: rgb(40, 40, 40);
+    transition: 350ms;
 }
