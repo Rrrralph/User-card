@@ -12,6 +12,8 @@ body {
 }
 
 .card-container {
+    display: flex;
+    flex-direction: column;
     width: 350px;
 }
 
@@ -34,7 +36,7 @@ body {
     transform: translateX(-50%);
     display: flex;
     width: fit-content;
-    padding: 1rem;
+    padding: 0.75rem;
     border-radius: 2rem;
     background-color: hsla(207, 65%, 52%, 0.8);
     color: white;
@@ -52,11 +54,11 @@ body {
 }
 
 .info-container {
-    position: relative;
-    margin-top: -4rem;
+    margin-top: -2rem;
     background-color: white;
     text-align: center;
     border-radius: 2rem;
+    z-index: 2;
 }
 
 .reating {
