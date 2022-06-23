@@ -9,11 +9,10 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgb(100, 100, 100);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .card-container {
-    display: flex;
-    flex-direction: column;
     width: 350px;
 }
 
@@ -40,7 +39,6 @@ body {
     border-radius: 2rem;
     background-color: hsla(207, 65%, 52%, 0.8);
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
@@ -54,18 +52,22 @@ body {
 }
 
 .info-container {
+    /*position: absolute;*/
     margin-top: -2rem;
     background-color: white;
-    text-align: center;
     border-radius: 2rem;
     z-index: 2;
 }
 
+.content {
+    text-align: center;
+    margin-top: -2rem;
+    padding: 2rem;
+}
+
 .reating {
-    margin-top: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color:rgb(100, 100, 100);
     font-weight: 700;
+    margin-top: 2rem;
 }
 
 .star-svg {
@@ -75,83 +77,74 @@ body {
 
 .name {
     font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
-    color: rgb(60, 60, 60);
+    opacity: 0.8;
     margin-top: 1rem;
 }
 
 .skills {
-    font-family: Arial, Helvetica, sans-serif;
-    color:rgb(100, 100, 100);
+    opacity: 0.7;
     font-size: 1rem;
     margin-top: 0.5rem;
 }
 
 .price {
-    color: rgb(125, 125, 125);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
     margin-top: 2rem;
+    opacity: 0.7;
 }
 
 .price-value {
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
     font-weight: 700;
-    color: rgb(45, 45, 45);
+    opacity: 0.9;
 }
 
 .hire-button {
     background-color:#d14f4f;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 22px;
-    border: none;
     border-radius: 2rem;
     padding: 1rem 1.5rem;
     margin-top: 1.5rem;
     width: 70%;
     box-shadow: rgba(160, 160, 160, 0.5) 0px 10px 15px 0px;
     cursor: pointer;
+    border: none;
+    transition: 150ms;
 }
 
 .hire-button:hover {
     background-color:#d44242;
     width: 75%;
     box-shadow: rgba(160, 160, 160, 0.5) 0px 5px 10px 0px;
-    transition: 150ms;
 }
 
 .contacts-list {
     display: flex;
-    margin-top: 2rem;
     justify-content: center;
 }
 
 .contact-item {
     width: 25%;
+    height: 5rem;
     border-top: 2px solid rgb(220, 220, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-item:not(:last-child) {
     border-right: 2px solid rgb(220, 220, 220);
 }
 
-.contact-button {
-    all: unset;
-    cursor: pointer;
-}
-
 .contact-icon {
     height: 2rem;
-    padding: 1.5rem;
     color: rgb(100, 100, 100);
+    transition: 300ms;
 }
 
 .contact-icon:hover {
-    padding: 1rem;
-    height: 3rem;
+    transform: scale(1.2);
     color: rgb(35, 120, 250);
-    transition: 300ms;
 }
