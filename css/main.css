@@ -8,7 +8,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(220, 220, 220);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -27,7 +26,6 @@ body {
 
 .card-container {
     width: 350px;
-    box-shadow: rgba(160, 160, 160, 0.5) 0px 30px 20px 20px;
     border-radius: 2rem;
 }
 
@@ -69,7 +67,6 @@ body {
 .info-container {
     position: relative;
     margin-top: -2rem;
-    background-color: white;
     border-radius: 2rem;
     z-index: 2;
 }
@@ -150,7 +147,6 @@ body {
 .contact-item {
     width: 25%;
     height: 5rem;
-    border-top: 1px solid rgb(220, 220, 220);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,11 +159,9 @@ body {
 .contact-icon {
     height: 2rem;
     width: 2rem;
-    color: rgb(80, 80, 80);
     transition: 300ms;
 }
 
 .contact-icon:hover {
     transform: scale(1.5);
-    color: rgb(35, 120, 250);
 }
