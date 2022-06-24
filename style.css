@@ -8,16 +8,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(29, 29, 56);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .theme-switcher {
     position: absolute;
-    top: 5%;
+    top: 1rem;
     left: 50%;
+    padding: 1rem 2rem;
     transform: translate(-50%);
     text-transform: uppercase;
+    color: antiquewhite;
+    background-color: darkblue;
+    font-weight: 700;
 }
 
 .card-container {
