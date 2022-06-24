@@ -171,30 +171,3 @@ body {
     transform: scale(1.5);
     color: rgb(35, 120, 250);
 }
-
-
-
-.dark-body {
-    background-color: rgb(20, 20, 80);
-}
-
-.dark-card-container {
-    box-shadow: rgba(160, 160, 160, 0.2) 0px 30px 20px 20px;
-}
-
-.dark-info-container {
-    color: antiquewhite;
-    background-color: rgb(80, 80, 80);
-}
-
-.dark-contact-item {
-    border-top: 1px solid rgb(220, 220, 220);
-}
-
-.dark-contact-icons {
-    color:white;
-}
-
-.dark-contact-icons:hover {
-    color: rgb(220, 220, 220);
-}
