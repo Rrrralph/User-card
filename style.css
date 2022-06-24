@@ -12,6 +12,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.theme-switcher {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    text-transform: uppercase;
+}
+
 .card-container {
     width: 350px;
     box-shadow: rgba(160, 160, 160, 0.5) 0px 30px 20px 20px;
@@ -157,4 +165,9 @@ body {
 .contact-icon:hover {
     transform: scale(1.5);
     color: rgb(35, 120, 250);
+}
+
+
+.dark-body{
+    background-color: rgb(20, 20, 80);
 }
