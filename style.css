@@ -8,7 +8,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(29, 29, 56);
+    background-color: rgb(220, 220, 220);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -22,7 +22,7 @@ body {
     color: antiquewhite;
     background-color: darkblue;
     font-weight: 700;
-}gita
+}
 
 .card-container {
     width: 350px;
@@ -162,7 +162,7 @@ body {
 .contact-icon {
     height: 2rem;
     width: 2rem;
-    color: rgb(100, 100, 100);
+    color: rgb(80, 80, 80);
     transition: 300ms;
 }
 
@@ -172,6 +172,28 @@ body {
 }
 
 
-.dark-body{
+
+.dark-body {
     background-color: rgb(20, 20, 80);
+}
+
+.dark-card-container {
+    box-shadow: rgba(160, 160, 160, 0.2) 0px 30px 20px 20px;
+}
+
+.dark-info-container {
+    color: antiquewhite;
+    background-color: rgb(80, 80, 80);
+}
+
+.dark-contact-item {
+    border-top: 1px solid rgb(220, 220, 220);
+}
+
+.dark-contact-icons {
+    color:white;
+}
+
+.dark-contact-icons:hover {
+    color: rgb(220, 220, 220);
 }
