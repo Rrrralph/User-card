@@ -163,16 +163,11 @@ body {
 .contact-icon {
     height: 2rem;
     width: 2rem;
-    color: rgb(100, 100, 100);
+    color: rgb(80, 80, 80);
     transition: 300ms;
 }
 
 .contact-icon:hover {
     transform: scale(1.5);
     color: rgb(35, 120, 250);
-}
-
-
-.dark-body{
-    background-color: rgb(20, 20, 80);
 }
