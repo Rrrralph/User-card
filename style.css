@@ -67,13 +67,21 @@ body {
     padding: 2rem;
 }
 
-.reating {
+.rating {
+    display: flex;
     font-weight: 700;
+    gap: 0.25rem;
+    justify-content: center;
 }
 
 .star-svg {
     height: 1rem;
+    width: 1rem;
     color: goldenrod;
+}
+
+.feedback-count {
+    opacity: 0.5;
 }
 
 .name {
@@ -116,7 +124,7 @@ body {
 }
 
 .hire-button:hover {
-    background-color:#d44242ec;
+    background-color:#e24c4c;
     width: 75%;
     box-shadow: rgba(160, 160, 160, 0.5) 0px 5px 10px 0px;
 }
@@ -141,11 +149,16 @@ body {
 
 .contact-icon {
     height: 2rem;
+    width: 2rem;
     color: rgb(100, 100, 100);
     transition: 300ms;
 }
 
 .contact-icon:hover {
-    transform: scale(1.2);
+    transform: scale(1.5);
     color: rgb(35, 120, 250);
+}
+
+.svg-holder {
+    display: none;
 }
