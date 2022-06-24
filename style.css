@@ -22,6 +22,7 @@ body {
     color: antiquewhite;
     background-color: darkblue;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .card-container {
