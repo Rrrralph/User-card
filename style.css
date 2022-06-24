@@ -8,12 +8,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(100, 100, 100);
+    background-color: rgb(220, 220, 220);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .card-container {
     width: 350px;
+    box-shadow: rgba(160, 160, 160, 0.5) 0px 30px 20px 20px;
+    border-radius: 2rem;
 }
 
 .avatar-container {
@@ -52,7 +54,7 @@ body {
 }
 
 .info-container {
-    /*position: absolute;*/
+    position: relative;
     margin-top: -2rem;
     background-color: white;
     border-radius: 2rem;
@@ -67,7 +69,6 @@ body {
 
 .reating {
     font-weight: 700;
-    margin-top: 2rem;
 }
 
 .star-svg {
@@ -101,13 +102,13 @@ body {
 
 .hire-button {
     background-color:#d14f4f;
+    width: 90%;
     color: white;
     font-weight: bold;
     font-size: 22px;
     border-radius: 2rem;
-    padding: 1rem 1.5rem;
+    padding: 0.75rem 1.5rem;
     margin-top: 1.5rem;
-    width: 70%;
     box-shadow: rgba(160, 160, 160, 0.5) 0px 10px 15px 0px;
     cursor: pointer;
     border: none;
@@ -115,7 +116,7 @@ body {
 }
 
 .hire-button:hover {
-    background-color:#d44242;
+    background-color:#d44242ec;
     width: 75%;
     box-shadow: rgba(160, 160, 160, 0.5) 0px 5px 10px 0px;
 }
@@ -128,14 +129,14 @@ body {
 .contact-item {
     width: 25%;
     height: 5rem;
-    border-top: 2px solid rgb(220, 220, 220);
+    border-top: 1px solid rgb(220, 220, 220);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .contact-item:not(:last-child) {
-    border-right: 2px solid rgb(220, 220, 220);
+    border-right: 1px solid rgb(220, 220, 220);
 }
 
 .contact-icon {
