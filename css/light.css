@@ -1,23 +1,23 @@
 body {
     background-color: rgb(220, 220, 220);
 }
-  
+
 .card-container {
-    box-shadow: rgba(160, 160, 160, 0.5) 0px 30px 20px 20px;
+    box-shadow: 20px 15px 20px 5px rgba(160, 160, 160, 0.5);
 }
-  
+
 .info-container {
     background-color: white;
 }
-  
+
 .contact-item {
     border-top: 1px solid rgb(220, 220, 220);
 }
-  
+
 .contact-icon {
     color: rgb(80, 80, 80);
 }
-  
+
 .contact-icon:hover {
     color: rgb(35, 120, 250);
 }
