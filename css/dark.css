@@ -2,14 +2,20 @@ body {
   background-color: rgb(30, 30, 30);
 }
 
-.card-container {
-  box-shadow: 20px 15px 20px 5px rgba(160, 160, 160, 0.2);
+.theme-switcher {
+  justify-content: flex-end;
+  background-color:whitesmoke;
+  color: black;
 }
 
 .info-container {
   color: whitesmoke;
   background-color: rgb(80, 80, 80);
-  transition: 1s;
+  transition: 350ms;
+}
+
+.star-svg {
+  color: gold;
 }
 
 .feedback-count {

@@ -10,20 +10,25 @@ body {
     align-items: center;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-    transition: 1s;
+    transition: 350ms;
 }
 
 .theme-switcher {
     position: absolute;
-    top: 1rem;
-    left: 30%;
-    padding: 1rem 2rem;
-    transform: translate(-50%);
-    text-transform: uppercase;
-    color: antiquewhite;
-    background-color: darkblue;
-    font-weight: 700;
+    top: 3%;
+    width: 6rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 2rem;
     cursor: pointer;
+    border: none;
+    transition: 150ms;
+}
+
+.sun-svg {
+    height: 2rem;
 }
 
 .card-container {
@@ -89,7 +94,6 @@ body {
 .star-svg {
     height: 1rem;
     width: 1rem;
-    color: goldenrod;
 }
 
 .name {
@@ -130,7 +134,6 @@ body {
 
 .hire-button:hover {
     background-color:#e24c4c;
-    width: 75%;
     box-shadow: rgba(160, 160, 160, 0.5) 0px 5px 10px 0px;
 }
 
