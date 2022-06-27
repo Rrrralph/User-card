@@ -8,10 +8,36 @@ body {
 
 .info-container {
     background-color: white;
+    transition: 1s;
+
+}
+
+.feedback-count {
+    opacity: 0.5;
+}
+
+.name {
+    opacity: 0.8;
+}
+
+.skills {
+    opacity: 0.6;
+}
+
+.price {
+    opacity: 0.7;
+}
+
+.price-value {
+    opacity: 0.9;
 }
 
 .contact-item {
-    border-top: 1px solid rgb(220, 220, 220);
+    border-top: 1px solid rgba(220, 220, 220, 0.5);
+}
+
+.contact-item:not(:last-child) {
+    border-right: 1px solid rgba(220, 220, 220, 0.5);
 }
 
 .contact-icon {
