@@ -1,8 +1,8 @@
-const switcher = document.querySelector('#dark-mode');
-const styleLink = document.querySelector('#theme-link');
-const lightTheme = 'css/light.css';
-const darkTheme = 'css/dark.css';
-const isDarkTheme = false;
+const switcher = document.querySelector('#theme-switcher');
+const lightTheme = 'light';
+const darkTheme = 'dark';
+const body = document.body;
+let currentTheme = localStorage['theme'] || lightTheme;
 
 checkThemeState();
 
@@ -11,25 +11,16 @@ switcher.addEventListener('click', (e) => {
 });
 
 function changeTheme() {
-    const currentTheme = styleLink.getAttribute('href');
-
     const newTheme = currentTheme === lightTheme ? darkTheme : lightTheme;
-    localStorage['theme'] = newTheme;
+    body.classList.add(newTheme);
+    body.classList.remove(currentTheme);
 
-    styleLink.setAttribute('href', newTheme);
+    currentTheme = newTheme;
+    localStorage['theme'] = newTheme;
 }
 
-// function changeTheme() {
-//     const currentTheme = styleLink.getAttribute('href');
-
-//     const newTheme = currentTheme === lightTheme ? darkTheme : lightTheme;
-//     localStorage['theme'] = newTheme;
-
-//     styleLink.setAttribute('href', newTheme);
-// }
-
 function checkThemeState() {
-    if (localStorage['theme'] === darkTheme) {
-        styleLink.setAttribute('href', darkTheme);
+    if(localStorage['theme']) {
+        body.classList = localStorage['theme'];
     }
 }
