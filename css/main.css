@@ -183,12 +183,16 @@ body {
 }
 
 
+/*light theme
+
+body.light
+
+*/
 
 /*
-
 dark theme
 
-body {
+body.dark {
   background-color: rgb(30, 30, 30);
 }
 
