@@ -10,7 +10,6 @@ body {
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     transition: 350ms;
-    background-color: rgb(220, 220, 220);
 }
 
 .theme-switcher {
@@ -26,8 +25,6 @@ body {
     border: none;
     transition: 150ms;
     justify-content: flex-start;
-    background-color:rgb(80, 80, 80);
-    color: white;
 }
 
 .sun-svg {
@@ -37,7 +34,6 @@ body {
 .card-container {
     width: 350px;
     border-radius: 2rem;
-    box-shadow: 20px 15px 20px 5px rgba(160, 160, 160, 0.5);
 }
 
 .avatar-container {
@@ -80,7 +76,6 @@ body {
     margin-top: -2rem;
     border-radius: 2rem;
     z-index: 2;
-    background-color: white;
     transition: 350ms;
 }
 
@@ -100,40 +95,30 @@ body {
 .star-svg {
     height: 1rem;
     width: 1rem;
-    color: goldenrod;
-}
-
-.feedback-count {
-    opacity: 0.5;
 }
 
 .name {
     font-size: 24px;
     font-weight: 800;
     margin-top: 1rem;
-    opacity: 0.8;
 }
 
 .skills {
     font-size: 1rem;
     margin-top: 0.5rem;
-    opacity: 0.6;
 }
 
 .price {
     margin-top: 2rem;
-    opacity: 0.7;
 }
 
 .price-value {
     font-size: 1.3rem;
     font-weight: 700;
     margin-left: 0.5rem;
-    opacity: 0.9;
 }
 
 .hire-button {
-    background-color:#d14f4f;
     width: 90%;
     color: white;
     font-weight: bold;
@@ -141,15 +126,9 @@ body {
     border-radius: 2rem;
     padding: 0.75rem 1.5rem;
     margin-top: 1.5rem;
-    box-shadow: rgba(160, 160, 160, 0.5) 0px 10px 15px 0px;
     cursor: pointer;
     border: none;
     transition: 150ms;
-}
-
-.hire-button:hover {
-    background-color:#e24c4c;
-    box-shadow: rgba(160, 160, 160, 0.5) 0px 5px 10px 0px;
 }
 
 .contacts-list {
@@ -163,7 +142,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid rgba(220, 220, 220, 0.5);
 }
 
 .contact-item:not(:last-child) {
@@ -174,78 +152,126 @@ body {
     height: 2rem;
     width: 2rem;
     transition: 300ms;
-    color: rgb(80, 80, 80);
 }
 
 .contact-icon:hover {
     transform: scale(1.5);
-    color: rgb(35, 120, 250);
+}
+
+/*sass-structure-for-compilyng*/
+
+body.light{
+  background-color: rgb(220, 220, 220);
+  .theme-switcher{
+    background-color:rgb(80, 80, 80);
+    color: white;
+  }
+
+  .info-container {
+    background-color: white;
+  }
+
+  .star-svg {
+    color: goldenrod;
+  }
+
+  .feedback-count {
+    opacity: 0.5;
+  }
+
+  .name {
+    opacity: 0.8;
+  }
+
+  .skills {
+    opacity: 0.6;
+  }
+
+  .price {
+    opacity: 0.7;
+  }
+
+  .price-value {
+    opacity: 0.9;
+  }
+
+  .hire-button {
+    background-color:#d14f4f;
+  }
+
+  .hire-button:hover {
+    background-color:#e24c4c;
+  }
+
+  .contact-item {
+    border-top: 1px solid rgba(220, 220, 220, 0.5);
+  }
+
+  .contact-icon {
+    color: rgb(80, 80, 80);
+  }
 }
 
 
-/*light theme
-
-body.light
-
-*/
-
-/*
-dark theme
-
-body.dark {
+body.dark{
   background-color: rgb(30, 30, 30);
-}
+  .theme-switcher {
+    justify-content: flex-end;
+    background-color:whitesmoke;
+    color: black;
+  }
 
-.theme-switcher {
-  justify-content: flex-end;
-  background-color:whitesmoke;
-  color: black;
-}
+  .info-container {
+    color: whitesmoke;
+    background-color: rgb(80, 80, 80);
+    transition: 350ms;
+  }
 
-.info-container {
-  color: whitesmoke;
-  background-color: rgb(80, 80, 80);
-  transition: 350ms;
-}
+  .star-svg {
+    color: gold;
+  }
 
-.star-svg {
-  color: gold;
-}
+  .feedback-count {
+    opacity: 0.8;
+  }
 
-.feedback-count {
-  opacity: 0.8;
-}
+  .name {
+    opacity: 1;
+  }
 
-.name {
-  opacity: 1;
-}
+  .skills {
+    opacity: 0.8;
+  }
 
-.skills {
-  opacity: 0.8;
-}
+  .price {
+    opacity: 1;
+  }
 
-.price {
-  opacity: 1;
-}
+  .price-value {
+    opacity: 0.8;
+  }
 
-.price-value {
-  opacity: 0.8;
-}
+  .hire-button {
+    background-color:#d14f4f;
+  }
 
-.contact-item {
-  border-top: 1px solid rgba(220, 220, 220, 0.2);
-}
+  .hire-button:hover {
+    background-color:#e24c4c;
+  }
 
-.contact-item:not(:last-child) {
-  border-right: 1px solid rgba(220, 220, 220, 0.2);
-}
+  .contact-item {
+    border-top: 1px solid rgba(220, 220, 220, 0.2);
+  }
 
-.contact-icon {
-  color:rgb(220, 220, 220);
-}
+  .contact-item:not(:last-child) {
+    border-right: 1px solid rgba(220, 220, 220, 0.2);
+  }
 
-.contact-icon:hover {
-  color: white;
-}
+  .contact-icon {
+    color:rgb(220, 220, 220);
+  }
 
-*/
+  .contact-icon:hover {
+    color: white;
+  }
+}

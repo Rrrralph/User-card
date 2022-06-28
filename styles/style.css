@@ -1,0 +1,291 @@
+body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd {
+  margin: 0px;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-transition: 350ms;
+  transition: 350ms;
+}
+
+.theme-switcher {
+  position: absolute;
+  top: 3%;
+  width: 6rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: 150ms;
+  transition: 150ms;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.sun-svg {
+  height: 2rem;
+}
+
+.card-container {
+  width: 350px;
+  border-radius: 2rem;
+}
+
+.avatar-container {
+  position: relative;
+  height: 400px;
+}
+
+.avatar-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.status {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.75rem;
+  border-radius: 2rem;
+  background-color: hsla(207deg, 65%, 52%, 0.8);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  gap: 0.5rem;
+}
+
+.checked-svg {
+  height: 1rem;
+  width: 25px;
+  color: white;
+}
+
+.info-container {
+  position: relative;
+  margin-top: -2rem;
+  border-radius: 2rem;
+  z-index: 2;
+  -webkit-transition: 350ms;
+  transition: 350ms;
+}
+
+.content {
+  text-align: center;
+  margin-top: -2rem;
+  padding: 2rem;
+}
+
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 700;
+  gap: 0.25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.star-svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 1rem;
+}
+
+.skills {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.price {
+  margin-top: 2rem;
+}
+
+.price-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-left: 0.5rem;
+}
+
+.hire-button {
+  width: 90%;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  border-radius: 2rem;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  border: none;
+  -webkit-transition: 150ms;
+  transition: 150ms;
+}
+
+.contacts-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-item {
+  width: 25%;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-item:not(:last-child) {
+  border-right: 1px solid rgba(220, 220, 220, 0.5);
+}
+
+.contact-icon {
+  height: 2rem;
+  width: 2rem;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.contact-icon:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+/*sass-structure-for-compilyng*/
+body.light {
+  background-color: rgb(220, 220, 220);
+}
+body.light .theme-switcher {
+  background-color: rgb(80, 80, 80);
+  color: white;
+}
+body.light .info-container {
+  background-color: white;
+}
+body.light .star-svg {
+  color: goldenrod;
+}
+body.light .feedback-count {
+  opacity: 0.5;
+}
+body.light .name {
+  opacity: 0.8;
+}
+body.light .skills {
+  opacity: 0.6;
+}
+body.light .price {
+  opacity: 0.7;
+}
+body.light .price-value {
+  opacity: 0.9;
+}
+body.light .hire-button {
+  background-color: #d14f4f;
+}
+body.light .hire-button:hover {
+  background-color: #e24c4c;
+}
+body.light .contact-item {
+  border-top: 1px solid rgba(220, 220, 220, 0.5);
+}
+body.light .contact-icon {
+  color: rgb(80, 80, 80);
+}
+
+body.dark {
+  background-color: rgb(30, 30, 30);
+}
+body.dark .theme-switcher {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: whitesmoke;
+  color: black;
+}
+body.dark .info-container {
+  color: whitesmoke;
+  background-color: rgb(80, 80, 80);
+  -webkit-transition: 350ms;
+  transition: 350ms;
+}
+body.dark .star-svg {
+  color: gold;
+}
+body.dark .feedback-count {
+  opacity: 0.8;
+}
+body.dark .name {
+  opacity: 1;
+}
+body.dark .skills {
+  opacity: 0.8;
+}
+body.dark .price {
+  opacity: 1;
+}
+body.dark .price-value {
+  opacity: 0.8;
+}
+body.dark .hire-button {
+  background-color: #d14f4f;
+}
+body.dark .hire-button:hover {
+  background-color: #e24c4c;
+}
+body.dark .contact-item {
+  border-top: 1px solid rgba(220, 220, 220, 0.2);
+}
+body.dark .contact-item:not(:last-child) {
+  border-right: 1px solid rgba(220, 220, 220, 0.2);
+}
+body.dark .contact-icon {
+  color: rgb(220, 220, 220);
+}
+body.dark .contact-icon:hover {
+  color: white;
+}
