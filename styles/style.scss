@@ -1,7 +1,6 @@
 body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd
 {
   margin: 0px;
-
 }
 
 body {
@@ -25,6 +24,7 @@ body {
     cursor: pointer;
     border: none;
     transition: 150ms;
+    justify-content: flex-start;
 }
 
 .sun-svg {
@@ -76,6 +76,7 @@ body {
     margin-top: -2rem;
     border-radius: 2rem;
     z-index: 2;
+    transition: 350ms;
 }
 
 .content {
@@ -118,7 +119,6 @@ body {
 }
 
 .hire-button {
-    background-color:#d14f4f;
     width: 90%;
     color: white;
     font-weight: bold;
@@ -126,15 +126,9 @@ body {
     border-radius: 2rem;
     padding: 0.75rem 1.5rem;
     margin-top: 1.5rem;
-    box-shadow: rgba(160, 160, 160, 0.5) 0px 10px 15px 0px;
     cursor: pointer;
     border: none;
     transition: 150ms;
-}
-
-.hire-button:hover {
-    background-color:#e24c4c;
-    box-shadow: rgba(160, 160, 160, 0.5) 0px 5px 10px 0px;
 }
 
 .contacts-list {
@@ -150,6 +144,10 @@ body {
     align-items: center;
 }
 
+.contact-item:not(:last-child) {
+    border-right: 1px solid rgba(220, 220, 220, 0.5);
+}
+
 .contact-icon {
     height: 2rem;
     width: 2rem;
@@ -158,4 +156,122 @@ body {
 
 .contact-icon:hover {
     transform: scale(1.5);
+}
+
+/*sass-structure-for-compilyng*/
+
+body.light{
+  background-color: rgb(220, 220, 220);
+  .theme-switcher{
+    background-color:rgb(80, 80, 80);
+    color: white;
+  }
+
+  .info-container {
+    background-color: white;
+  }
+
+  .star-svg {
+    color: goldenrod;
+  }
+
+  .feedback-count {
+    opacity: 0.5;
+  }
+
+  .name {
+    opacity: 0.8;
+  }
+
+  .skills {
+    opacity: 0.6;
+  }
+
+  .price {
+    opacity: 0.7;
+  }
+
+  .price-value {
+    opacity: 0.9;
+  }
+
+  .hire-button {
+    background-color:#d14f4f;
+  }
+
+  .hire-button:hover {
+    background-color:#e24c4c;
+  }
+
+  .contact-item {
+    border-top: 1px solid rgba(220, 220, 220, 0.5);
+  }
+
+  .contact-icon {
+    color: rgb(80, 80, 80);
+  }
+}
+
+
+body.dark{
+  background-color: rgb(30, 30, 30);
+  .theme-switcher {
+    justify-content: flex-end;
+    background-color:whitesmoke;
+    color: black;
+  }
+
+  .info-container {
+    color: whitesmoke;
+    background-color: rgb(80, 80, 80);
+    transition: 350ms;
+  }
+
+  .star-svg {
+    color: gold;
+  }
+
+  .feedback-count {
+    opacity: 0.8;
+  }
+
+  .name {
+    opacity: 1;
+  }
+
+  .skills {
+    opacity: 0.8;
+  }
+
+  .price {
+    opacity: 1;
+  }
+
+  .price-value {
+    opacity: 0.8;
+  }
+
+  .hire-button {
+    background-color:#d14f4f;
+  }
+
+  .hire-button:hover {
+    background-color:#e24c4c;
+  }
+
+  .contact-item {
+    border-top: 1px solid rgba(220, 220, 220, 0.2);
+  }
+
+  .contact-item:not(:last-child) {
+    border-right: 1px solid rgba(220, 220, 220, 0.2);
+  }
+
+  .contact-icon {
+    color:rgb(220, 220, 220);
+  }
+
+  .contact-icon:hover {
+    color: white;
+  }
 }
